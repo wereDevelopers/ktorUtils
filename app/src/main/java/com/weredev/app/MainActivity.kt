@@ -27,7 +27,7 @@ import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 
 /**
- * This example demonstrates the use of retrofitUtils to acquire view binding within an activity.
+ * This example demonstrates the use of ktorUtils to acquire json.
  */
 class MainActivity : AppCompatActivity() {
 
@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
                 val client = createClient()
                 //init client
                 KtorUtils.initClient(client)
+
+                KtorUtils.executeCallLight(HttpMethod.Get, endpoint = "https://jsonplaceholder.typicode.com/todos/1")
 
                 val responseBody = try {
                     KtorUtils.executeCall<String>(HttpMethod.Get, endpoint = "https://jsonplaceholder.typicode.com/todos/1")
