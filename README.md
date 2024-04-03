@@ -27,13 +27,13 @@ KtorUtils.initClient(client)
 
 ```
 
-## example for retrieve json as a String:
+## examples:
 ```
 KtorUtils.executeCall<String>(HttpMethod.Get, endpoint = "https://jsonplaceholder.typicode.com/todos/1")
 
 ```
 
-to make a call that returns only a boolean you can use executeLight only to verify the return of the server is status 200 ok
+to make a call that returns only a boolean you can use executeLight only to verify the return of the server is status 200
 
 ```
 KtorUtils.executeCallLight(HttpMethod.Get, endpoint = "https://jsonplaceholder.typicode.com/todos/1")
