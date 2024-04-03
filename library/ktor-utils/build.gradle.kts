@@ -38,18 +38,10 @@ android {
 dependencies {
 
     implementation ("androidx.core:core-ktx:1.12.0")
-//    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-//    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-//    implementation ("com.squareup.retrofit2:converter-scalars:2.9.0")
-//    implementation ("com.squareup.okhttp3:logging-interceptor:4.12.0")
-//    implementation ("com.squareup.okhttp3:okhttp:4.12.0")
-
     implementation ("io.ktor:ktor-client-core:2.3.7")
-
 
 }
 
-//ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
 
 afterEvaluate {
     publishing {
